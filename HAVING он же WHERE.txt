@@ -1,0 +1,7 @@
+SELECT category_id, SUM(unit_price * units_in_stock)
+FROM products
+WHERE discontinued != 1
+GROUP BY category_id					-- группируем по id
+HAVING SUM(unit_price * units_in_stock) > 5000		-- (пост фильтр)второй WHERE в запросе но всегда идет после WHERE и GROUP BY
+ORDER BY SUM(unit_price * units_in_stock)		-- сортировка по (если добавить DESC сорт. будет на убывание)
+LIMIT 5;						-- всегда идет в конце запроса
