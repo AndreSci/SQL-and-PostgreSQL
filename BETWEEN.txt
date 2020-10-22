@@ -1,0 +1,8 @@
+SELECT *
+FROM orders
+WHERE freight >= 20 AND freight <= 40;
+
+-- BETWEEN эквивалентен (>= <=)
+SELECT COUNT(*)
+FROM orders
+WHERE freight BETWEEN 20 AND 40;
