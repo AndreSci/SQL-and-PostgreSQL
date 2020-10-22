@@ -1,0 +1,18 @@
+SELECT DISTINCT country
+FROM customers
+ORDER BY country ASC;  --сортировка по возростанию
+
+SELECT DISTINCT country
+FROM customers
+ORDER BY country DESC; --сортировка по убыванию
+
+
+SELECT DISTINCT country, city
+FROM customers
+ORDER BY country DESC, city DESC;	-- сортировка нескольких столбцов
+
+
+SELECT ship_city, order_date
+FROM orders
+WHERE ship_city = 'London'
+ORDER BY order_date;
