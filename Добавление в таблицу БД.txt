@@ -1,0 +1,17 @@
+INSERT INTO book
+VALUES
+(1, 'Text 1', '111'),
+(2, 'Text 2', '222'),
+(3, 'Text 3', '333'),
+(4, 'Text 4', '444'),
+(5, 'Text 5', '555'),
+(6, 'Text 6', '666'),
+(7, 'Text 7', '777'),
+(8, 'Text 8', '888');
+
+INSERT INTO publisher
+VALUES
+(1, 'Publisher''s 1', 'NY'),
+(2, 'Publisher 2', 'NY'),
+(3, 'Publisher 3', 'NY'),
+(4, 'Publisher 4', 'SA');

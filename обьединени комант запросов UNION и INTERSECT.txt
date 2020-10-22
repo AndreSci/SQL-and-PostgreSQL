@@ -1,0 +1,11 @@
+SELECT country
+FROM customers
+UNION				-- просто обьеденяется уникальные значения
+SELECT country
+FROM suppliers;
+
+SELECT country
+FROM customers
+INTERSECT			-- выводит только те значение которые есть в обеих столбцах
+SELECT country
+FROM suppliers;

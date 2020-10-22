@@ -1,0 +1,8 @@
+SELECT *
+FROM book
+
+* - выбор всех столбцов
+
+Пример:
+SELECT title
+FROM book

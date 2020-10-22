@@ -1,0 +1,35 @@
+CREATE TABLE name_tab_1
+(
+	name_tab_1_id integer PRIMARY KEY,
+	name_1 varchar(128) NOT NULL,
+	name_2 text NOT NULL
+);
+
+CREATE TABLE name_tab_2
+(
+	name_tab_2_id integer PRIMARY KEY,
+	name_1 text NOT NULL,
+	name_2 varchar(32) NOT NULL
+
+)
+
+
+
+
+
+ПРИМЕР:
+
+CREATE TABLE publisher
+(
+	publisher_id integer PRIMARY KEY,
+	org_name varchar(128) NOT NULL,
+	address text NOT NULL
+);
+
+CREATE TABLE book
+(
+	book_id integer PRIMARY KEY,
+	titel text NOT NULL,
+	isbn varchar(32) NOT NULL
+
+)
